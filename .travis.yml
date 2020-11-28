@@ -2,3 +2,12 @@ language: java
 jdk: openjdk-11
 after_deploy: -echo "done deploying"
 
+addons:
+  sonarcloud:
+    organization: "tameii"
+    token:
+      secure: "1LpJXyEkmkOtfZIrrtADrA" # encrypted value of your token
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar

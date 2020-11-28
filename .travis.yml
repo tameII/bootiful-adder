@@ -2,12 +2,3 @@ language: java
 jdk: openjdk-11
 after_deploy: -echo "done deploying"
 
-addons:
-  sonarcloud:
-    organization: "tameii" #key of the org you chose at step #3
-    token:
-    $SONAR_TOKEN
-
-script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn clean verify sonar:sonar -Pcoverage -Dsonar.projectKey=tameii_bootiful-adder

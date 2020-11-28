@@ -9,4 +9,4 @@ addons:
       secure: "K3J8TljLl4UAzVwxQ+fQ9SudPbxhQDhp1CP67a1ZtqAqs2HDEXhuTMg8DpFhAoU8nIzVPainaF/3aUbYAUOgGgObozBRV7GH0SrKRiFKf5dCcZlEV1HOO9Lm3AK6fJ37te81DIl+BO089sgtt5Sx9Z1mJvZjbApmURZQdV+luXUEN3juXBQjwVzEdM95BcYBcgSmZ3fKQVxnzHD76es7dGQCixdXTc8lpsZkYb/VoFkmVtSxBDD1gepn9696ZUXQnO9sa+OiDRjlTa7LiNojd/ozOfJQDd7jWGSXiDH0Q0W4iMaWDXX3h0VieklFDun9ZotdO2g8Eqm5XV0vl9gEXxjmZ57S6JcLcgV+M2UmqG22+RvJ0acIEqtN1035w9JUT+wds3hIF/rQKEM6iY5xH7CxbWzwNLh8IWd7fcg7N9FE2Mc5kD0TP/N/gcKAfTSW8yT/RgNb951lYLAZI5ikeb0SER5hXhkbrZKYrS1amgxY/fyRdrBWkspJGB7OlpB7V5kfxh9JBiv8UDiFvWw8hn+ksc/rI5EgcoPkzznBCUgplwa6JzPKPD8wEYqOm2rAIVnKSsQlLABQuar26f2tda5NSB9vA5dA0SAHg+CHkYuI+89ytZFeEeeX6p+hkty+2EkLePFYFWiZ78AcUasxeYeMsmE6e5rdA+yzg3blLO0=" # encrypted value of your token
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn clean verify sonar:sonar -Pcoverage -Dsonar.projectKey=myorg_myrepo
+  - mvn clean verify sonar:sonar -Pcoverage -Dsonar.projectKey=tameii_bootiful-adder

@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 class BootifulApplicationTests {
 
     @Test

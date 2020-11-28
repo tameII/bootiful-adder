@@ -5,8 +5,7 @@ after_deploy: -echo "done deploying"
 addons:
   sonarcloud:
     organization: "tameii"
-    token: "hYll5NVmiuZbctS0HnU19h4+ytntQVTxvPPnGjadnBM62fqTKYxJUhrmPHU8a7/iR9KjVv6iKtDywkUIPeE5Alro7R0vazi/4oriyXljwiA4DJuENnAtlvxJNrOChj8BT4rtMBhAa7OrLuBwPMq9W5qmZATiF51JQ+yxKMUEv4UBx+9HTU3HiFiD3f5dR03V429sIVOONEA4qm1H/5feMcOZ01oU8TReCd1xjGHqM0NK3Q5d+9/9UXDIO5Vt6pJuGTWx8YiinK+Kavutjl5z13OX3vi3eI+9uomaCSfhf5QajU6z9GCbZYEwC8KMqW6QCHL9C7uqcrYceiCux3uFgqgm8bxdWZ8Xa9yaR2IVubzDrcbatpbudgDdzTBNrWq4H8ibRszfPzVSAqybnTtmt5hS8lZ3OnIJoZMUMBtNfbLGz8PcwLIfUgzvApTQOElE5OKUadbxvSvMrpc9Srnsef7UsYAcl7bh18bsfHW9+k3k0FeCf7n0s/oxzN78jVSCi1Fvyt37aJA6V7snODcTPnqjCd9mGYwzTw4BevaCMXDrLqjkxb+Xa3zBfuoDnyQCsrMdxMzgWw7vyATi60WInDWAjCa79YQbgAZGqnaMx8249Qv6fmwiJeSMepuzxyCzcqXPIYvU2S/Xw6BJoB9UhQTtizMWfIWlbnT2+n/ziqw="
-
+    token: ${SONAR_TOKEN}  # var on travis
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis

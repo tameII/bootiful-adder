@@ -2,15 +2,12 @@ package fr.univlorraine.bootiful.features.add;
 
 import fr.univlorraine.bootiful.steps.serenity.AdderRestSteps;
 import fr.univlorraine.bootiful.steps.serenity.AdderServiceSteps;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import java.io.UnsupportedEncodingException;
+
 
 @RunWith(SerenityRunner.class)
 public class AdderStory {

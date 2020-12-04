@@ -1,13 +1,10 @@
 package fr.univlorraine.bootiful.steps.serenity;
 
-import io.restassured.RestAssured;
 import net.thucydides.core.annotations.Step;
 import org.hamcrest.Matchers;
-import org.junit.jupiter.api.Test;
+
 
 import static io.restassured.RestAssured.*;
-
-import java.io.UnsupportedEncodingException;
 
 
 /**

@@ -2,11 +2,3 @@ language: java
 jdk: openjdk-11
 after_deploy: -echo "done deploying"
 
-addons:
-  sonarcloud:
-    organization: "tameii"
-    token: ${SONAR_TOKEN}  # var on travis
-
-script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=tameII_bootiful-adder

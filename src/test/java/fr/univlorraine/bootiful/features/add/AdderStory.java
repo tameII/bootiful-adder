@@ -25,20 +25,12 @@ public class AdderStory {
 
     @Test
     public void adding_two_should_give_the_sum_of_both() {
-        //GIVEN
-        adderService.givenBaseAndAdder(10, 5);
-        //WHEN
-        adderService.whenAdd();
-        //THEN
-        adderService.summedUp();
-    }
-
-    @Test
-    public void without_connection_adding_two_number_with_adderRest_should_give_sum_of_both() {
         restSteps.givenCurrentNumber();
         restSteps.whenAddNumber(10);
         restSteps.thenSummedUp();
+
     }
+
 
 
 }

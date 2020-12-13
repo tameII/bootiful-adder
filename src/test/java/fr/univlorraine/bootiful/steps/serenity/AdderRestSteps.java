@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.*;
 
 
 /**
- * @author not me
+ * @author notMe
  */
 public class AdderRestSteps {
 

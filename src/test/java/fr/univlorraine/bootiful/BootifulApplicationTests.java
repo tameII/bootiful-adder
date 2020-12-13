@@ -1,6 +1,5 @@
 package fr.univlorraine.bootiful;
 
-
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

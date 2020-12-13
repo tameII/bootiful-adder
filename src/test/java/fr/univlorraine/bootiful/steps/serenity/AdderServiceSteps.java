@@ -2,10 +2,12 @@ package fr.univlorraine.bootiful.steps.serenity;
 
 import fr.univlorraine.bootiful.services.AdderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
 
 @ContextConfiguration(classes = AdderService.class)
 public class AdderServiceSteps {

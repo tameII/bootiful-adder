@@ -20,7 +20,7 @@ public class AdderStory_Jbehave {
     public void givenANumber(){
         restSteps.givenCurrentNumber();
     }
-    @When("I submit another number {10} to adder")
+    @When("I submit another number $num to adder")
     public void whenISubmitToAdderWithNumber(int num){
         restSteps.whenAddNumber(num);
     }

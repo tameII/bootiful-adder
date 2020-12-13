@@ -1,4 +1,5 @@
-Meta:
+Submit a number
+
 Narrative:
 As user
 I want to add a number

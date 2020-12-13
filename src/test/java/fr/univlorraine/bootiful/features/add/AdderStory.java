@@ -2,14 +2,15 @@ package fr.univlorraine.bootiful.features.add;
 
 import fr.univlorraine.bootiful.steps.serenity.AdderRestSteps;
 import fr.univlorraine.bootiful.steps.serenity.AdderServiceSteps;
-import net.serenitybdd.junit.runners.SerenityRunner;
+import net.serenitybdd.junit.spring.integration.SpringIntegrationSerenityRunner;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
 
 
-
-@RunWith(SerenityRunner.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@RunWith(SpringIntegrationSerenityRunner.class)
 public class AdderStory {
 
     @Steps

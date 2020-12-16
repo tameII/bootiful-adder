@@ -39,7 +39,7 @@ public class AdderRestSteps {
     @Step("got the sum")
     public void thenSummedUp() {
         when().
-                get("http://localhost:8080/adder/current" ).
+                get("/adder/current" ).
                 then().assertThat().body(Matchers.equalTo(""+currentNum));
 
     }

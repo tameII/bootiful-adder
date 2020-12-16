@@ -16,7 +16,7 @@ public class AdderRestSteps {
     private int currentNum;
     @Step("Testing if the server give a status code: 200")
     public void contactServer(){
-        when().get("http://localhost:8080/adder/current").then().statusCode(200);
+        when().get("/adder/current").then().statusCode(200);
     }
 
     @Step("get the current number")
@@ -24,15 +24,15 @@ public class AdderRestSteps {
         currentNum = 10;
             given().
                     param("base", currentNum).
-                    when().post("http://localhost:8080/adder/changeBaseNum");
+                    when().post("/adder/changeBaseNum");
 
-            when().get("http://localhost:8080/adder/current").
-                    then().assertThat().body(Matchers.equalTo(""+currentNum));
+        when().get("/adder/current").
+                then().assertThat().body(Matchers.equalTo(""+currentNum));
         }
 
     @Step("adding {0}")
     public void whenAddNumber(int num) {
-        given().param("num", num).get("http://localhost:8080/adder/accumulate");
+        given().param("num", num).get("/adder/accumulate");
         currentNum += num;
     }
 
